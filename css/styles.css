@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Livvic", "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+
+.form-check-label {
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.label-sm {
+  width: 50px;
+  height: 50px;
+}
+
+.label-md {
+  width: 60px;
+  height: 60px;
+}
+
+.label-lg {
+  width: 70px;
+  height: 70px;
+}
+
+.form-check-input {
+  display: none;
+}
+
+.form-check-input:checked + .form-check-label {
+  background-color: rgb(130, 170, 209);
+}

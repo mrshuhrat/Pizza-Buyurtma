@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>55-dars. Bootstrap. container va boshqa umumiy masalalar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="h2 text-center font-weight-bold my-3 text-success">Pitsa buyurtma qilish!</h1>
+
+    <div class="row">
+
+      <div class="col-8 h-100">
+        <form class="pizza-form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="d-flex flex-column mb-5">
+            <label class="font-weight-bold h5" for="select">Noni qanday bo'lsin?</label>
+            <select class="pizza-bred custom-select w-50" name="select" id="select" required>
+              <option value="" selected disabled>Non qlinligini tanlang</option>
+              <option value="Yupqa">Yupqa</option>
+              <option value="O'rtacha">O'rtacha</option>
+              <option value="Qalin">Qalin</option>
+            </select>
+          </div>
+
+          <div class="mb-5">
+            <h2 class="h5 m-0 font-weight-bold">Kattaligi</h2>
+            <div class="d-flex align-items-center">
+              <div class="form-check">
+                <input class="form-check-input small-pizza" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <label class="form-check-label label-sm d-flex align-items-center justify-content-center" for="exampleRadios1">
+                  25 sm
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input middle-pizza" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label label-md d-flex align-items-center justify-content-center" for="exampleRadios2">
+                  30 sm
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input large-pizza" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label label-lg d-flex align-items-center justify-content-center" for="exampleRadios3">
+                  35 sm
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-4">
+            <h5 class="font-weight-bold">Ustiga nima solaylik?</h5>
+            <div class="checkbox-wrapper"></div>
+          </div>
+
+          <div>
+            <h5 class="font-weight-bold">Qo'shimchalar</h5>
+            <div class="additional-wrapper"></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-4 border-left h-100">
+        <div class="mb-4">
+          <h5 class="font-weight-bold">Non qalinligi:</h5>
+          <span class="pizza-berd-result text-warning"></span>
+        </div>
+
+        <div class="mb-5">
+          <h5 class="font-weight-bold">Kattalgi:</h5>
+          <span class="size-result text-warning"></span>
+        </div>
+
+        <div class="mb-5">
+          <h5 class="font-weight-bold">Ustiga solinadi:</h5>
+          <div class="retsepts-result d-flex flex-column"></div>
+        </div>
+
+        <div>
+          <h5 class="font-weight-bold">Qo'shimchalar:</h5>
+          <div class="additional-retsepts-result d-flex flex-column"></div>
+        </div>
+
+        <button class="btn bg-success text-white w-50 ml-5" type="submit">Buyurtma berish</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
